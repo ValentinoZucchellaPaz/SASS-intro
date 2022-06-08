@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h2>Prueba Sass</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-it">Qué es SASS</a></li>
+                <li><a href="#pros">Pros</a></li>
+                <li><a href="#how-to-us">Como usar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    
+        <section class="about-it" id="about-it">
+            <h2>Qué es SASS?</h2>
+            <p>SASS es un preprocesador de texto de css, en el cual puedo escribir el texto de css con una sintaxis scss y luego compilar este texto a css. Esto parece inutil en un principio, pero permite mantener un codigo de css mas simple, prolijo y sencillo de mantener y editar, a través de una estructura más ordenada.</p>
+        </section>
+        <section class="pros" id="pros">
+            <h2>PROS</h2>
+            <ul>
+                <li>Simple</li>
+                <li>Prolijo</li>
+                <li>Ordenado</li>
+                <li>Sencillo mantenimiento y edición</li>
+            </ul>
+        </section>
+        <section class="how-to-us" id="how-to-us">
+            <h2>Instalación y uso</h2>
+            <p>El método para compilar scss a css elegido es mediante node js, por lo que la instalación del mismo es la siguiente.</p>
+            <div class="pasos">
+                <ul>
+                    <li>Instala node.js</li>
+                    <li>Instala npm</li>
+                    <li>Ingresa al directorio del repositorio</li>
+                    <li>Inicia el npm, escribe en la terminal: npm init </li>
+                    <li>Instala el nodemon: <br> npm install -D node-sass nodemon.</li>
+                    <li>Crea la carpeta SCSS y CSS y sus archivos respectivos.</li>
+                    <li>Edita el package.json e inserta los lineas.
+                        <ul>
+                            <li>"build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css", </li>
+                            <li>"watch-css": "nodemon -e scss -x \"npm run build-css\"" </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Entrega de SASS I de Valentino Zucchella Paz 
+        </p>
+    </footer>
+</body>
+</html>

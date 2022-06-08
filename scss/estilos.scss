@@ -1,0 +1,83 @@
+@import "header";
+@import "variables";
+
+body {
+    background-color: black;
+    color: white;
+}
+main {
+    // cambios grales
+    section {
+        padding: 2rem;
+        margin: 1rem auto;
+        font-family: $font-text;
+    }
+    h2 {
+        font-size: 1.5rem;
+        width: 100%;
+        color: $color-title;
+        font-family: $font-title;
+    }
+    p {
+        width: 100%;
+        font-family: $font-text;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    // section sobre pros
+    .pros {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            border-radius: 50px;
+            background-color: greenyellow;
+            color: black;
+            li {
+                list-style-type: none;
+                margin: 1rem;
+                padding: 1rem;
+                transition: all 0.1s ease-in;
+
+
+                &:hover {
+                    border-radius: 50px;
+                    background-color: $bg-hover;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    // section sobre como compilar
+    .how-to-us{
+        .pasos {
+            background-color: gray;
+            border-radius: 50px;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                list-style-type: circle;
+
+                li {
+                    padding: 1rem;
+                    font-weight: bold;
+                    color: black;
+                    
+                    ul {
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    font-family: $font-title;
+    text-align: center;
+    padding: 1rem;
+}

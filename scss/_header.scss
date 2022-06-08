@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    // header title
+    .title {
+        font-size: 2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        h2 {
+            color: greenyellow;
+        }
+    }
+    // header nav
+    nav {
+        ul {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            list-style-type: none;
+            
+            li{
+                transition: all 0.1s ease-in;
+                &:hover{
+                    transform: scale(1.1,1.1);
+                }
+                a {
+                    padding: 1rem;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        border-radius: 20px;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

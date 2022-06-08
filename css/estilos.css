@@ -1,0 +1,89 @@
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center; }
+  header .title {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; }
+    header .title h2 {
+      color: greenyellow; }
+  header nav ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none; }
+    header nav ul li {
+      transition: all 0.1s ease-in; }
+      header nav ul li:hover {
+        transform: scale(1.1, 1.1); }
+      header nav ul li a {
+        padding: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white; }
+        header nav ul li a:hover {
+          border-radius: 20px;
+          background-color: gray;
+          color: black; }
+
+body {
+  background-color: black;
+  color: white; }
+
+main section {
+  padding: 2rem;
+  margin: 1rem auto;
+  font-family: "Courier New", Courier, monospace; }
+
+main h2 {
+  font-size: 1.5rem;
+  width: 100%;
+  color: greenyellow;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+
+main p {
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+main .pros ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  background-color: greenyellow;
+  color: black; }
+  main .pros ul li {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 1rem;
+    transition: all 0.1s ease-in; }
+    main .pros ul li:hover {
+      border-radius: 50px;
+      background-color: gray;
+      color: black;
+      font-weight: bold; }
+
+main .how-to-us .pasos {
+  background-color: gray;
+  border-radius: 50px; }
+  main .how-to-us .pasos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: circle; }
+    main .how-to-us .pasos ul li {
+      padding: 1rem;
+      font-weight: bold;
+      color: black; }
+      main .how-to-us .pasos ul li ul {
+        list-style-type: none; }
+
+footer {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding: 1rem; }
